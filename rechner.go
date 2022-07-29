@@ -11,10 +11,12 @@ func main() {
 
 	fmt.Println("Bitte geben Sie die erste Zahl ein:")
 	fmt.Scan(&zahl1)
-	fmt.Println("Bitte geben Sie den Operator ein:")
-	fmt.Scan(&operator)
+
 	fmt.Println("Bitte geben Sie die zweite Zahl ein:")
 	fmt.Scan(&zahl2)
+
+	fmt.Println("Bitte geben Sie den Operator (+, -, /, *) ein:")
+	fmt.Scan(&operator)
 
 	switch operator {
 	case "+":
@@ -34,7 +36,7 @@ func main() {
 
 	}
 
-	fmt.Println("Moechten Sie eine weitere Berechnung durchfuehren? (ja/nein)")
+	fmt.Println("Nochmal rechnen? (ja/nein)")
 	fmt.Scan(&erneut)
 
 	if erneut == "ja" {
